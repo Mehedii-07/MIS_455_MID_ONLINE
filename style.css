@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Header and footer styling */
+
 header {
     background: #333;
     color: #fff;
@@ -22,10 +22,13 @@ nav a {
     margin: 0 1rem;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
+    
 
 nav a:hover {
-    color: #ccc;
+    color: #4a90e2; 
+    transform: scale(1.1);
 }
 
 
@@ -118,19 +121,17 @@ footer {
     height: auto;
     border-radius: 5px;
 }
-/* Add these styles to center the product images and their text */
 
-/* Product Grid Container */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust grid columns based on available space */
-    gap: 2rem; /* Space between grid items */
-    justify-items: center; /* Center the grid items horizontally */
+    gap: 2rem; 
+    justify-items: center; 
     padding: 2rem;
     text-align: center;
 }
 
-/* Product Item */
+/
 .product-item {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -138,7 +139,7 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 350px; /* Max width for product item */
+    max-width: 350px; 
     text-align: center;
 }
 
@@ -149,7 +150,7 @@ footer {
     border-radius: 5px;
 }
 
-/* Product Title and Price */
+
 .product-item h3 {
     font-size: 1.2rem;
     color: #333;
@@ -160,3 +161,37 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+/* Product Item with Hover Effect */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px; /* Max width for product item */
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* Change color on hover */
+.product-item:hover {
+    background-color: #f1f1f1; /* Light grey background */
+    border-color: #4a90e2; /* Change border color to blue */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+}
+
+/* Product Image with Hover Effect */
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling image */
+}
+
+/* Scale image on hover */
+.product-item:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image */
+}
+
