@@ -108,3 +108,13 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+.contact {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
